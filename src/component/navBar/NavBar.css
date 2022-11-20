@@ -1,0 +1,263 @@
+.navbar-items{
+    width: 100%;
+    background: linear-gradient(#3e5f9c, #080e4d);
+    height: 80px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 500;
+}
+
+.navbar-items h1{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-family: 'Zen Tokyo Zoo';
+    color: rgb(255, 255, 255);
+    font-size: 2.3rem;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    margin: 0 1rem;
+    font-size: 2.5rem;
+    margin: 0 0 .8rem .5rem;
+    padding: 0;
+    font-size: 2rem;
+    vertical-align: top;
+}
+
+.navbar-items > ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-items > ul > li:not(:last-child){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.navbar-items > ul > li:last-child {
+    display: flex;
+    margin-left: 1.5rem;
+    height: 80px;
+    flex-wrap: wrap;
+
+}
+
+.nav-links {
+    display: block;
+    text-decoration: none;
+    padding: 0.6rem 0.8rem;
+    font-family: sans-serif;
+    transition: all .5s ease;
+    color: white;
+}
+
+.nav-links:hover {
+    background-color: rgb(107, 161, 243, 0.8);
+    
+}
+
+.toggle-button {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+}
+
+.toggle-button > svg {
+    vertical-align: top;
+}
+
+.dropdown-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    position: absolute;
+    top: 80px;
+}
+
+.list-link {
+    text-decoration: none;
+    display: block;
+    padding: 0.8rem 0.6rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(31, 13, 99);
+    border-bottom: 1px solid grey;
+    transition: 0.5s;
+}
+
+.list-link:hover {
+    background-color: rgb(107, 161, 243, 0.8);
+    color: rgb(23, 8, 107);
+}
+
+/* login 區 */
+
+.logged-bar {
+    width: 12rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    flex-wrap: wrap;
+    align-content: center;
+    
+}
+
+.login-button {
+    display: block;
+    text-decoration: none;
+    padding: .08rem .08rem;
+    width: 4rem;
+    background-color: rgb(255, 154, 96);
+    text-align: center;
+    font-size: .8rem;
+    color: rgb(255, 0, 0);
+    border-radius: 1rem;
+    font-weight: bolder;
+    border: .1rem solid firebrick;
+    margin-right: .3rem;
+
+}
+
+.login-button:hover {
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+.signup-button {
+    display: block;
+    text-decoration: none;
+    padding: .08rem .08rem;
+    width: 4rem;
+    background-color: rgb(134, 202, 108);
+    text-align: center;
+    font-size: .8rem;
+    color: rgb(27, 97, 0);
+    border-radius: 1rem;
+    font-weight: bolder;
+    border: .1rem solid rgb(0, 70, 15);
+    margin-left: .3rem;
+
+}
+
+.signup-button:hover {
+    background-color: rgb(27, 97, 0);
+    color: white;
+}
+
+.sayhello{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+
+@media screen and (max-width: 960px) {
+    .navbar-items {
+        padding: 1.5rem;
+    }
+
+    .toggle-button{
+        display: block;
+    }
+
+    .navbar-items > ul {
+        display: flex;
+        flex-direction: column;
+        width: 16rem;
+        position: absolute;
+        left: -100%; 
+        opacity: 1;
+        z-index: 500;
+        transition: all .5s ease;
+        top: 80px;
+        background-color: rgb(14, 66, 121);
+        height: 100vh;
+        text-align: left;
+        font-size: 1.2rem;
+    }
+
+    .navbar-items > ul > li:not(:last-child) {
+        display: block;
+        height: auto;
+        
+    }
+
+    .nav-links {
+        border-bottom: 1px solid white;
+        padding: 1rem 0.9rem;
+    }
+
+    .nav-links:hover {
+        font-size: 1.4rem;
+        font-weight: bold;
+        background-color: transparent;
+        border-radius: 0; 
+    }
+
+    .navbar-items > ul.active {
+        left: 0;
+        padding: 0;
+    }
+
+    /* login 區 */
+
+    .sayhello{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .logged-bar {
+        padding: 0.6rem;
+        font-size: 1.5rem;
+        width: 100%;
+        margin-left: 0;
+
+    }
+
+    .navbar-items > ul > li:last-child{
+        height: auto;
+        order: -1;
+        padding: 2rem 0;
+        margin: 0;
+        border-bottom: 1px solid white;
+
+    }
+    
+    
+}
+
+
+
+
+

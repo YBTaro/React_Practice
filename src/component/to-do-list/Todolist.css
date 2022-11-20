@@ -1,0 +1,117 @@
+.todo-body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,rgb(255, 209, 123),rgb(250, 153, 0)) ;
+}
+
+.todo-body h1{
+    text-align: center;
+    color: white;
+    padding: 6rem 0 4rem;
+    font-size: 2.5rem;
+}
+
+/* form */
+
+.todo-form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.todo-input{
+    width: 15rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    border: 1px solid rgb(255, 123, 0);
+    border-radius: 1rem 0 0 1rem;
+    padding: 0 0 0 1rem;
+    outline:none
+}
+
+.todo-button{
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 123, 0);
+    border: 1px solid rgb(255, 123, 0);
+    border-radius: 0 1rem 1rem 0;
+    
+}
+
+.todo-button:hover{
+    background-color: rgb(255, 123, 0);
+    color: rgb(255, 255, 255);
+    
+}
+
+.todo-select{
+    margin-left: 1rem;
+}
+
+.todo-filter{
+    height: 2rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    outline: none;
+    border: 1px solid rgb(255, 123, 0);
+}
+
+/* todo list */
+.todo-container{
+    
+}
+
+.todo-list{
+    margin-top: 5rem;
+}
+
+.todo{
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+.todo-content{
+    width: 20rem;
+    background-color: white;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.todo-completed{
+    text-decoration: line-through;
+    font-style: oblique;
+    color:grey;
+}
+
+.todo-check-but{
+    background-color: rgb(0, 168, 14);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    width: 2.3rem;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.todo-delete-but{
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    width: 2.3rem;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
